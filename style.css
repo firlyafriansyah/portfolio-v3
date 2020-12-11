@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap&family=Cookie&family=Lobster&display=swap&family=Roboto:wght@300;400;700&display=swap&family=Fira+Mono:wght@700&display=swap');
+* {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  line-height: 1;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.content_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+/* side */
+.sidebar {
+  height: 100vh;
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 100px 0px;
+  z-index: 1;
+}
+.avatar {
+  width: 50%;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+.name {
+  font-family: 'Lobster', cursive;
+  margin-bottom: 20px;
+}
+.job {
+  font-family: 'Cookie', cursive;
+  font-weight: lighter;
+  margin-bottom: 60px;
+}
+.nav_list {
+  list-style-type: none;
+  margin-bottom: 60px;
+}
+.nav_item {
+  padding: 20px;
+  text-transform: uppercase;
+}
+.nav_item a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-family: "Roboto",sans-serif;
+}
+.nav_item a:hover {
+  text-decoration: underline;
+}
+.copyright {
+  font-family: "Cookie", cursive;
+  font-size: 20px;
+}
+
+/* Active nav */
+
+.active {
+  background-color: black;
+}
+.active a {
+  color: white;
+}
+
+/* Main Content */
+.main_content {
+width: 100%;
+height: 100vh;
+}
+.home {
+  background-image: url("./public/img/self.JPG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+.desc {
+  position: absolute;
+  top: 30%;
+  margin-left: 60px;
+}
+.desc h1 {
+  font-family: "Fira Mono", monospace;
+  color: black;
+  font-size: 64px;
+  margin-bottom: 10px;
+}
+.desc h1 span {
+  background-color: black;
+  color: white;
+}
+.desc p {
+  font-family: "Cookie", cursive;
+  font-size: 32px;
+  margin-bottom: 60px;
+}
+.desc a {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  padding: 10px 40px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-family: "Cookie", cursive;
+  font-size: 24px;
+  font-weight: bold;
+  box-shadow: 0px 5px 10px #b8b8b8;
+}
+.desc button:active {
+  transform: translateY(3px);
+}
+.desc button:hover {
+  background-color: #f1f1f1;
+}
+
+/* Education */
+.desc_edu {
+  position: absolute;
+  top: 10%;
+  margin-left: 60px;
+}
+.desc_edu h1 {
+  margin-top: 20px;
+  font-family: "Cookie", cursive;
+  font-size: 42px;
+}
+.desc_edu table {
+  margin-bottom: 40px;
+}
+.education {
+  background-image: url("./public/img/edu.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+.year {
+  text-align: center;
+  padding: 20px;
+  font-family: "Lobster", cursive;
+  font-size: 18px;
+}
+.school {
+  padding: 10px;
+  font-family: "Lobster", cursive;
+  font-size: 20px;
+}
+.gap {
+  text-align: center;
+  font-family: "Lobster", cursive;
+  font-size: 18px;
+}
+.org {
+  font-family: "Cookie", cursive;
+  font-size: 18px;
+  font-weight: lighter;
+  padding-left: 20px;
+}
+
+/* Skill */
+.skill {
+  background-image: url("./public/img/skill.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+.desc_skill {
+  position: absolute;
+  top: 20%;
+  margin: 0;
+  text-align: left;
+  width: 30%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.skill_item {
+  text-align: center;
+  padding: 20px;
+}
+.skill_item p {
+  margin-top: 10px;
+  font-family: "Cookie", cursive;
+  font-size: 32px;
+}
+.skill_item img {
+  width: 100px;
+}
+
+/* Contact */
+.contact {
+  background-image: url("./public/img/contact.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+.desc_contact {
+  position: absolute;
+  top: 10%;
+  width: 20%;
+  margin-left: 60px;
+}
+.btn {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  font-family: "Cookie", cursive;
+  font-size: 34px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px #9e9e9e;
+  border: 3px solid;
+  border-color: black;
+}
+.btn:active {
+  transform: translateY(4px);
+  box-shadow: none;
+}
+.btn:hover {
+  border: 3px solid white;
+}
+
+.phone {
+  background-color: #6aaf50;
+  border-color:  #6aaf50;
+}
+.mail {
+  background-color: #f14336;
+  border-color: #f14336;
+}
+.wa {
+  background-color: #1bd741;
+  border-color: #1bd741;
+}
+.tele {
+  background-color: #61a8de;
+  border-color:  #61a8de;
+}
+.twitt {
+  background-color: #55acee;
+  border-color: #55acee;
+}
+.insta {
+  background-color: #fd004a;
+  border-color: #fd004a;
+}
+.linked {
+  background-color: #0084b1;
+  border-color:  #0084b1;
+}
+.git {
+  background-color: #000;
+  border-color: #000;
+}
+.fb {
+  background-color: #4267b2;
+  border-color: #4267b2;
+}
