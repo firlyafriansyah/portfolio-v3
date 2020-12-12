@@ -1,4 +1,11 @@
-import { Home, Education, Skill, Contact } from "../../pages/index.js";
+import {
+  Home,
+  Education,
+  Skill,
+  Contact,
+  Profile,
+  Blog,
+} from "../../pages/index.js";
 import ActiveNav from "../activeNav/index.js";
 
 const Navigation = () => {
@@ -9,6 +16,10 @@ const Navigation = () => {
       switch (res.id) {
         case "home":
           Home();
+          ActiveNav(`${res.id}_item`);
+          break;
+        case "profile":
+          Profile();
           ActiveNav(`${res.id}_item`);
           break;
         case "education":

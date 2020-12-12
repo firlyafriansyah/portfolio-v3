@@ -1,5 +1,5 @@
 import Navigation from "./src/components/navigation/index.js";
-import { Home, Education, Skill } from "./src/pages/index.js";
+import { Home, Education, Skill, Profile, Blog } from "./src/pages/index.js";
 import ActiveNav from "./src/components/activeNav/index.js";
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -8,6 +8,10 @@ document.addEventListener("DOMContentLoaded", () => {
   switch (url) {
     case "#home":
       Home();
+      ActiveNav(id);
+      break;
+    case "#profile":
+      Profile();
       ActiveNav(id);
       break;
     case "#education":

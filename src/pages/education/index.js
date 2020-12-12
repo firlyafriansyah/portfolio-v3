@@ -15,7 +15,7 @@ const Education = () => {
         <tr>
           <th class="year">2012 - 2015</th>
           <td class="school">
-            <strong>SMP Negeri 3 Bojongmangu</strong>
+            <strong>SMP Negeri 1 Bojongmangu</strong>
           </td>
         </tr>
         <tr>
