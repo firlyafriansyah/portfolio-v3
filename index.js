@@ -1,19 +1,10 @@
 import Navigation from "./src/components/navigation/index.js";
-import {
-  Home,
-  Education,
-  Skill,
-  Profile,
-  Blog,
-  BlogDetail,
-} from "./src/pages/index.js";
+import { Home, Education, Skill, Profile, Blog } from "./src/pages/index.js";
 import ActiveNav from "./src/components/activeNav/index.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   const url = window.location.hash;
-  const uid = url.split("?")[1];
   const id = `${url.slice(1)}_item`;
-  console.log(url.includes("blog-detail"));
   switch (url) {
     case "#home":
       Home();
@@ -38,10 +29,6 @@ document.addEventListener("DOMContentLoaded", () => {
     case "#blog":
       Blog();
       ActiveNav(id);
-      break;
-    case `#blog-detail?${uid}`:
-      BlogDetail(uid);
-      ActiveNav("blog_item");
       break;
     default:
       Home();
